@@ -1,0 +1,1144 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "period": [
+    "2026-11-01",
+    "2027-04-30"
+  ],
+  "doctors": 30,
+  "slots": 211,
+  "required": 211,
+  "assigned": 211,
+  "status": "FEASIBLE",
+  "errors": [],
+  "warnings": [
+    "Historique incomplet ou couverture non déclarée. Absence d'occurrence connue ne signifie pas absence de garde. Aucune compensation de dette historique."
+  ],
+  "min_total": 7,
+  "max_total": 8,
+  "metadata": {
+    "rules": {
+      "date_exceptions": {},
+      "distinct_day": true,
+      "gap_confirmed": true,
+      "holiday_exceptions": {},
+      "holiday_mode": "PRIORITAIRE",
+      "holiday_years": 10,
+      "max_seconds": 30,
+      "min_gap": 7,
+      "recent_months": 12,
+      "seed": 42,
+      "templates": [
+        {
+          "category": "SEMAINE",
+          "effective": "1900-01-01",
+          "enabled": true,
+          "end": "24:00",
+          "id": "soir",
+          "kind": "SEMAINE",
+          "required": 1,
+          "start": "19:00",
+          "until": null
+        },
+        {
+          "category": "SAMEDI",
+          "effective": "1900-01-01",
+          "enabled": true,
+          "end": "24:00",
+          "id": "samedi",
+          "kind": "SAMEDI",
+          "required": 1,
+          "start": "14:00",
+          "until": null
+        },
+        {
+          "category": "DIMANCHE_JOUR",
+          "effective": "1900-01-01",
+          "enabled": true,
+          "end": "19:00",
+          "id": "dimanche-jour",
+          "kind": "DIMANCHE",
+          "required": 1,
+          "start": "08:00",
+          "until": null
+        },
+        {
+          "category": "DIMANCHE_NUIT",
+          "effective": "1900-01-01",
+          "enabled": true,
+          "end": "24:00",
+          "id": "dimanche-nuit",
+          "kind": "DIMANCHE",
+          "required": 1,
+          "start": "19:00",
+          "until": null
+        },
+        {
+          "category": "FERIE_JOUR",
+          "effective": "1900-01-01",
+          "enabled": true,
+          "end": "19:00",
+          "id": "ferie-jour",
+          "kind": "FERIE",
+          "required": 1,
+          "start": "08:00",
+          "until": null
+        },
+        {
+          "category": "FERIE_NUIT",
+          "effective": "1900-01-01",
+          "enabled": true,
+          "end": "24:00",
+          "id": "ferie-nuit",
+          "kind": "FERIE",
+          "required": 1,
+          "start": "19:00",
+          "until": null
+        }
+      ],
+      "weekday_threshold": null,
+      "workers": 1
+    },
+    "ortools": "9.15.6755",
+    "history_complete": false,
+    "history_records": 0,
+    "stages": [
+      {
+        "objective": "Rotation des fêtes",
+        "status": "OPTIMAL",
+        "value": 0,
+        "bound": 0
+      },
+      {
+        "objective": "Charge globale",
+        "status": "FEASIBLE",
+        "value": 1932,
+        "bound": 126.0
+      },
+      {
+        "objective": "Catégories",
+        "status": "UNKNOWN"
+      }
+    ],
+    "seed": 42,
+    "workers": 1,
+    "elapsed_seconds": 20.219,
+    "cancelled": false,
+    "weekday_threshold": 2,
+    "errors": [],
+    "warnings": [
+      "Historique incomplet ou couverture non déclarée. Absence d'occurrence connue ne signifie pas absence de garde. Aucune compensation de dette historique."
+    ]
+  },
+  "statistics": [
+    {
+      "id": "DEMO-001",
+      "medecin": "FICTIF 01 Médecin",
+      "cible": 7.033333333333333,
+      "total": 8,
+      "ecart": 0.9666666666666668,
+      "mois": {
+        "2026-11": 2,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 2
+      },
+      "mois_multiples": 2,
+      "categories": {
+        "FERIE_JOUR": 1,
+        "SEMAINE": 4,
+        "SAMEDI": 1,
+        "DIMANCHE_JOUR": 1,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "3": 2,
+        "1": 1,
+        "4": 1
+      },
+      "heures": 57.0,
+      "espacement_min": 21,
+      "feries": 1,
+      "fetes": [
+        {
+          "date": "2026-11-01",
+          "fetes": [
+            "TOUSSAINT"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-002",
+      "medecin": "FICTIF 02 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 2,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "FERIE_NUIT": 1,
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "4": 2,
+        "2": 1,
+        "0": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 1,
+      "fetes": [
+        {
+          "date": "2026-11-01",
+          "fetes": [
+            "TOUSSAINT"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-003",
+      "medecin": "FICTIF 03 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 2,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "0": 1,
+        "3": 1,
+        "1": 2
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-004",
+      "medecin": "FICTIF 04 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 2,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "FERIE_JOUR": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "1": 1,
+        "0": 1,
+        "2": 2
+      },
+      "heures": 52.0,
+      "espacement_min": 24,
+      "feries": 1,
+      "fetes": [
+        {
+          "date": "2026-12-25",
+          "fetes": [
+            "NOEL"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-005",
+      "medecin": "FICTIF 05 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 2,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "DIMANCHE_NUIT": 1,
+        "FERIE_NUIT": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "2": 1,
+        "1": 1,
+        "0": 1,
+        "3": 1
+      },
+      "heures": 41.0,
+      "espacement_min": 17,
+      "feries": 1,
+      "fetes": [
+        {
+          "date": "2026-12-25",
+          "fetes": [
+            "NOEL"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-006",
+      "medecin": "FICTIF 06 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 2,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "3": 1,
+        "2": 1,
+        "1": 1,
+        "4": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 22,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-007",
+      "medecin": "FICTIF 07 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 2,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "4": 1,
+        "3": 3
+      },
+      "heures": 46.0,
+      "espacement_min": 20,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-008",
+      "medecin": "FICTIF 08 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 2,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SAMEDI": 1,
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "0": 1,
+        "4": 2,
+        "2": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-009",
+      "medecin": "FICTIF 09 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 2,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "DIMANCHE_JOUR": 1,
+        "SEMAINE": 4,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "1": 1,
+        "0": 2,
+        "3": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 22,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-010",
+      "medecin": "FICTIF 10 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 2,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "DIMANCHE_NUIT": 1,
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "2": 1,
+        "1": 2,
+        "4": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 24,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-011",
+      "medecin": "FICTIF 11 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 2,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "DIMANCHE_NUIT": 1,
+        "SAMEDI": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "0": 1,
+        "2": 2,
+        "4": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 19,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-012",
+      "medecin": "FICTIF 12 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 2,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "1": 1,
+        "3": 2,
+        "0": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 19,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-013",
+      "medecin": "FICTIF 13 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 2,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "FERIE_JOUR": 1,
+        "SEMAINE": 3,
+        "FERIE_NUIT": 1,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "3": 1,
+        "0": 2
+      },
+      "heures": 46.0,
+      "espacement_min": 22,
+      "feries": 2,
+      "fetes": [
+        {
+          "date": "2026-11-11",
+          "fetes": [
+            "ARMISTICE"
+          ],
+          "precedentes": []
+        },
+        {
+          "date": "2027-01-01",
+          "fetes": [
+            "JOUR_AN"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-014",
+      "medecin": "FICTIF 14 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 2,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "FERIE_NUIT": 1,
+        "SEMAINE": 3,
+        "FERIE_JOUR": 1,
+        "DIMANCHE_NUIT": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "4": 1,
+        "1": 2
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 2,
+      "fetes": [
+        {
+          "date": "2026-11-11",
+          "fetes": [
+            "ARMISTICE"
+          ],
+          "precedentes": []
+        },
+        {
+          "date": "2027-01-01",
+          "fetes": [
+            "JOUR_AN"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-015",
+      "medecin": "FICTIF 15 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 2,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "3": 1,
+        "2": 1,
+        "1": 1,
+        "0": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 20,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-016",
+      "medecin": "FICTIF 16 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 2,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "DIMANCHE_NUIT": 1,
+        "DIMANCHE_JOUR": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "4": 1,
+        "3": 1,
+        "2": 1,
+        "1": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 21,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-017",
+      "medecin": "FICTIF 17 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 2,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SAMEDI": 1,
+        "SEMAINE": 4,
+        "DIMANCHE_NUIT": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "0": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-018",
+      "medecin": "FICTIF 18 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 2,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "DIMANCHE_JOUR": 1,
+        "SEMAINE": 5,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "1": 1,
+        "0": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1
+      },
+      "heures": 41.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-019",
+      "medecin": "FICTIF 19 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 2,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "DIMANCHE_NUIT": 1,
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "2": 2,
+        "1": 1,
+        "4": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 18,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-020",
+      "medecin": "FICTIF 20 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 2,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 5,
+        "SAMEDI": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "0": 2,
+        "1": 1,
+        "4": 1,
+        "3": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-021",
+      "medecin": "FICTIF 21 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 2,
+        "2027-03": 1,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "DIMANCHE_NUIT": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "1": 2,
+        "2": 1,
+        "0": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-022",
+      "medecin": "FICTIF 22 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 2,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 5,
+        "DIMANCHE_NUIT": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "2": 3,
+        "3": 1,
+        "4": 1
+      },
+      "heures": 41.0,
+      "espacement_min": 24,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-023",
+      "medecin": "FICTIF 23 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 2,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "SAMEDI": 1,
+        "DIMANCHE_NUIT": 1,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "3": 3,
+        "4": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-024",
+      "medecin": "FICTIF 24 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 2,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 4,
+        "SAMEDI": 1,
+        "FERIE_JOUR": 1,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "4": 2,
+        "2": 1,
+        "3": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 18,
+      "feries": 1,
+      "fetes": [
+        {
+          "date": "2027-03-29",
+          "fetes": [
+            "LUNDI_PAQUES"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-025",
+      "medecin": "FICTIF 25 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 2,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SAMEDI": 1,
+        "SEMAINE": 4,
+        "DIMANCHE_JOUR": 1,
+        "FERIE_NUIT": 1
+      },
+      "jours_semaine": {
+        "3": 2,
+        "4": 1,
+        "1": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 19,
+      "feries": 1,
+      "fetes": [
+        {
+          "date": "2027-03-29",
+          "fetes": [
+            "LUNDI_PAQUES"
+          ],
+          "precedentes": []
+        }
+      ]
+    },
+    {
+      "id": "DEMO-026",
+      "medecin": "FICTIF 26 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 2,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "DIMANCHE_JOUR": 1,
+        "SEMAINE": 4,
+        "DIMANCHE_NUIT": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "4": 2,
+        "0": 1,
+        "1": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 19,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-027",
+      "medecin": "FICTIF 27 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 2,
+        "2027-04": 1
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "DIMANCHE_NUIT": 1,
+        "SEMAINE": 5,
+        "DIMANCHE_JOUR": 1
+      },
+      "jours_semaine": {
+        "0": 3,
+        "1": 1,
+        "2": 1
+      },
+      "heures": 41.0,
+      "espacement_min": 22,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-028",
+      "medecin": "FICTIF 28 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 2
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 5,
+        "DIMANCHE_JOUR": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "0": 2,
+        "1": 2,
+        "3": 1
+      },
+      "heures": 46.0,
+      "espacement_min": 23,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-029",
+      "medecin": "FICTIF 29 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 2
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 6,
+        "DIMANCHE_NUIT": 1
+      },
+      "jours_semaine": {
+        "1": 2,
+        "2": 1,
+        "0": 1,
+        "4": 1,
+        "3": 1
+      },
+      "heures": 35.0,
+      "espacement_min": 24,
+      "feries": 0,
+      "fetes": []
+    },
+    {
+      "id": "DEMO-030",
+      "medecin": "FICTIF 30 Médecin",
+      "cible": 7.033333333333333,
+      "total": 7,
+      "ecart": -0.033333333333333215,
+      "mois": {
+        "2026-11": 1,
+        "2026-12": 1,
+        "2027-01": 1,
+        "2027-02": 1,
+        "2027-03": 1,
+        "2027-04": 2
+      },
+      "mois_multiples": 1,
+      "categories": {
+        "SEMAINE": 5,
+        "DIMANCHE_NUIT": 1,
+        "SAMEDI": 1
+      },
+      "jours_semaine": {
+        "2": 3,
+        "0": 1,
+        "4": 1
+      },
+      "heures": 40.0,
+      "espacement_min": 25,
+      "feries": 0,
+      "fetes": []
+    }
+  ]
+}

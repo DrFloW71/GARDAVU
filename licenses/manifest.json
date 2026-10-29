@@ -1,0 +1,249 @@
+[
+  {
+    "name": "absl-py",
+    "version": "2.5.1",
+    "license": "Apache-2.0",
+    "files": [
+      "licenses\\absl-py\\licenses\\AUTHORS",
+      "licenses\\absl-py\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "altgraph",
+    "version": "0.17.5",
+    "license": "MIT",
+    "files": [
+      "licenses\\altgraph\\LICENSE"
+    ]
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.6",
+    "license": "License :: OSI Approved :: BSD License",
+    "files": [
+      "licenses\\colorama\\licenses\\LICENSE.txt"
+    ]
+  },
+  {
+    "name": "et_xmlfile",
+    "version": "2.0.0",
+    "license": "MIT",
+    "files": [
+      "licenses\\et_xmlfile\\AUTHORS.txt",
+      "licenses\\et_xmlfile\\LICENCE.python",
+      "licenses\\et_xmlfile\\LICENCE.rst"
+    ]
+  },
+  {
+    "name": "immutabledict",
+    "version": "4.3.1",
+    "license": "MIT",
+    "files": [
+      "licenses\\immutabledict\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.1",
+    "license": "MIT",
+    "files": [
+      "licenses\\iniconfig\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.4",
+    "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "files": [
+      "licenses\\numpy\\licenses\\LICENSE.txt",
+      "licenses\\numpy\\licenses\\numpy\\_core\\include\\numpy\\libdivide\\LICENSE.txt",
+      "licenses\\numpy\\licenses\\numpy\\_core\\src\\common\\pythoncapi-compat\\COPYING",
+      "licenses\\numpy\\licenses\\numpy\\_core\\src\\highway\\LICENSE",
+      "licenses\\numpy\\licenses\\numpy\\_core\\src\\multiarray\\dragon4_LICENSE.txt",
+      "licenses\\numpy\\licenses\\numpy\\_core\\src\\npysort\\x86-simd-sort\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\_core\\src\\umath\\svml\\LICENSE",
+      "licenses\\numpy\\licenses\\numpy\\fft\\pocketfft\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\linalg\\lapack_lite\\LICENSE.txt",
+      "licenses\\numpy\\licenses\\numpy\\ma\\LICENSE",
+      "licenses\\numpy\\licenses\\numpy\\random\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\random\\src\\distributions\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\random\\src\\mt19937\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\random\\src\\pcg64\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\random\\src\\philox\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\random\\src\\sfc64\\LICENSE.md",
+      "licenses\\numpy\\licenses\\numpy\\random\\src\\splitmix64\\LICENSE.md"
+    ]
+  },
+  {
+    "name": "openpyxl",
+    "version": "3.1.5",
+    "license": "MIT",
+    "files": [
+      "licenses\\openpyxl\\LICENCE.rst"
+    ]
+  },
+  {
+    "name": "ortools",
+    "version": "9.15.6755",
+    "license": "Apache 2.0",
+    "files": [
+      "licenses\\ortools\\LICENSE"
+    ]
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "files": [
+      "licenses\\packaging\\licenses\\LICENSE",
+      "licenses\\packaging\\licenses\\LICENSE.APACHE",
+      "licenses\\packaging\\licenses\\LICENSE.BSD"
+    ]
+  },
+  {
+    "name": "pandas",
+    "version": "3.1.0",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses\\pandas\\licenses\\LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\BOTTLENECK_LICENCE",
+      "licenses\\pandas\\licenses\\LICENSES\\DATEUTIL_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\HAVEN_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\KLIB_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\MUSL_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\NUMPY_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\PACKAGING_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\PSF_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\PYPERCLIP_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\PYUPGRADE_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\SAS7BDAT_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\STATSBASE_JL_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\ULTRAJSON_LICENSE",
+      "licenses\\pandas\\licenses\\LICENSES\\XSIMD_LICENSE",
+      "licenses\\pandas\\licenses\\subprojects\\fast_float-8.2.10\\LICENSE-APACHE",
+      "licenses\\pandas\\licenses\\subprojects\\fast_float-8.2.10\\LICENSE-BOOST",
+      "licenses\\pandas\\licenses\\subprojects\\fast_float-8.2.10\\LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "pefile",
+    "version": "2023.2.7",
+    "license": "MIT",
+    "files": [
+      "licenses\\pefile\\LICENSE"
+    ]
+  },
+  {
+    "name": "pluggy",
+    "version": "1.7.0",
+    "license": "MIT",
+    "files": [
+      "licenses\\pluggy\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "protobuf",
+    "version": "6.33.6",
+    "license": "3-Clause BSD License",
+    "files": [
+      "licenses\\protobuf\\LICENSE"
+    ]
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "license": "BSD-2-Clause",
+    "files": [
+      "licenses\\Pygments\\licenses\\AUTHORS",
+      "licenses\\Pygments\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "pyinstaller",
+    "version": "6.16.0",
+    "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "files": [
+      "licenses\\pyinstaller\\licenses\\COPYING.txt"
+    ]
+  },
+  {
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.9",
+    "license": "License :: OSI Approved :: Apache Software License, License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "files": [
+      "licenses\\pyinstaller-hooks-contrib\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "8.4.2",
+    "license": "MIT",
+    "files": [
+      "licenses\\pytest\\licenses\\AUTHORS",
+      "licenses\\pytest\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "python-dateutil",
+    "version": "3.0.0",
+    "license": "Dual License",
+    "files": [
+      "licenses\\python-dateutil\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "pywin32-ctypes",
+    "version": "0.2.3",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses\\pywin32-ctypes\\LICENSE.txt"
+    ]
+  },
+  {
+    "name": "setuptools",
+    "version": "84.2.1",
+    "license": "MIT",
+    "files": [
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\LICENSE",
+      "licenses\\setuptools\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE.APACHE",
+      "licenses\\setuptools\\licenses\\LICENSE.BSD",
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE",
+      "licenses\\setuptools\\licenses\\LICENSE.txt",
+      "licenses\\setuptools\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "license": "MIT",
+    "files": [
+      "licenses\\six\\LICENSE"
+    ]
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "files": [
+      "licenses\\typing_extensions\\licenses\\LICENSE"
+    ]
+  },
+  {
+    "name": "tzdata",
+    "version": "2026.6",
+    "license": "Apache-2.0",
+    "files": [
+      "licenses\\tzdata\\licenses\\LICENSE",
+      "licenses\\tzdata\\licenses\\licenses\\LICENSE_APACHE"
+    ]
+  }
+]

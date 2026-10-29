@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.044" timestamp="2026-10-29T09:45:06.958791+01:00" hostname="WorkShip"><testcase classname="tests.test_weights" name="test_weight_dialog_rejects_nonpositive_or_nonfinite_value[0]" time="0.427" /></testsuite></testsuites>

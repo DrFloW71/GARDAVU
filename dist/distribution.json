@@ -1,0 +1,17 @@
+{
+  "GARDAVU.exe": {
+    "bytes": 56178206,
+    "MiB": 53.58,
+    "sha256": "35f1b0bf85a3c2f89e4cec932c19fdd1ec165fade1a11b4e8534ee87627d223f"
+  },
+  "GARDAVU-portable.zip": {
+    "bytes": 55862831,
+    "MiB": 53.27,
+    "sha256": "dcffc7c1784fa8201d19ca436e54d929fa391e4f5cd99d13c0429f2debec6137"
+  },
+  "GARDAVU-sources.zip": {
+    "bytes": 490246,
+    "MiB": 0.47,
+    "sha256": "ffcfd45404fc3a5c2d304a5d35786677868c92794410220010a6e0bc648c2708"
+  }
+}

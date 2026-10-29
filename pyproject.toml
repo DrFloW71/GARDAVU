@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gardavu"
+version = "1.1.7"
+authors = [{name = "Dr Florian Ronez"}]
+license = "LicenseRef-GARDAVU-NonCommercial"
+license-files = ["LICENSE"]
+description = "Répartition locale et explicable des gardes médicales"
+requires-python = ">=3.12,<3.13"
+dependencies = ["ortools==9.15.6755", "openpyxl==3.1.5"]
+
+[project.scripts]
+gardavu = "gardavu.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["gardavu*"]
+
+[tool.setuptools.package-data]
+gardavu = ["assets/*.ico", "assets/*.png", "assets/*.svg", "assets/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["gui: scénario exécuté dans un processus dédié par scripts/run_tests.py"]

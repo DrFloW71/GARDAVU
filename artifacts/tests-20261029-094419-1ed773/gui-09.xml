@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.141" timestamp="2026-10-29T09:44:57.618859+01:00" hostname="WorkShip"><testcase classname="tests.test_ui" name="test_configure_first_weekday_hours_without_leaving_incomplete_version" time="0.524" /></testsuite></testsuites>

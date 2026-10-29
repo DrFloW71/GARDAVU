@@ -1,0 +1,157 @@
+{
+  "tests": 60,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "runs": [
+    {
+      "name": "metier",
+      "selection": [
+        "-m",
+        "not gui"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-01",
+      "selection": [
+        "tests/test_design.py::test_palette_text_remains_readable[light]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-02",
+      "selection": [
+        "tests/test_design.py::test_palette_text_remains_readable[dark]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-03",
+      "selection": [
+        "tests/test_design.py::test_theme_persists_and_keeps_in_progress_form_and_data"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-04",
+      "selection": [
+        "tests/test_design.py::test_navigation_search_and_numeric_sort_keep_identity"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-05",
+      "selection": [
+        "tests/test_design.py::test_confirmation_in_dark_mode_retains_explicit_answer[Non-False]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-06",
+      "selection": [
+        "tests/test_design.py::test_confirmation_in_dark_mode_retains_explicit_answer[Oui-True]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-07",
+      "selection": [
+        "tests/test_ui.py::test_ui_project_plan_filter_and_import_preview"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-08",
+      "selection": [
+        "tests/test_ui.py::test_span_entry_inclusive_and_open_end"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-09",
+      "selection": [
+        "tests/test_ui.py::test_configure_first_weekday_hours_without_leaving_incomplete_version"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-10",
+      "selection": [
+        "tests/test_ui.py::test_template_pointer_actions_select_the_clicked_row"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-11",
+      "selection": [
+        "tests/test_weights.py::test_multiple_weight_is_used_by_solver[2-expected0]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-12",
+      "selection": [
+        "tests/test_weights.py::test_multiple_weight_is_used_by_solver[3-expected1]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-13",
+      "selection": [
+        "tests/test_weights.py::test_weight_targets_remain_proportional_by_month_category_and_holiday"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-14",
+      "selection": [
+        "tests/test_weights.py::test_weight_never_creates_duplicate_doctor_or_relaxes_spacing"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-15",
+      "selection": [
+        "tests/test_weights.py::test_weight_button_persists_and_updates_targets_without_changing_saved_roster"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-16",
+      "selection": [
+        "tests/test_weights.py::test_weight_dialog_rejects_nonpositive_or_nonfinite_value[0]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-17",
+      "selection": [
+        "tests/test_weights.py::test_weight_dialog_rejects_nonpositive_or_nonfinite_value[-2]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-18",
+      "selection": [
+        "tests/test_weights.py::test_weight_dialog_rejects_nonpositive_or_nonfinite_value[nan]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-19",
+      "selection": [
+        "tests/test_weights.py::test_weight_dialog_rejects_nonpositive_or_nonfinite_value[inf]"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gui-20",
+      "selection": [
+        "tests/test_weights.py::test_equity_export_contains_the_weight_used_by_validated_plan"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

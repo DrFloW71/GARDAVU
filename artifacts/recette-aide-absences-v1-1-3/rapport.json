@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "inline_help_fields": [
+    "participation",
+    "suspensions",
+    "unavailable"
+  ],
+  "no_prefilled_absences": true,
+  "french_date_examples_saved": true,
+  "inclusive_dates": true,
+  "isolated_day": true,
+  "multiple_periods": true,
+  "themes_checked": [
+    "dark",
+    "light"
+  ]
+}

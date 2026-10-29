@@ -1,0 +1,10 @@
+.venv/
+.build-cache/
+__pycache__/
+.pytest_cache/
+node_modules/
+build/
+*.lock
+*.gardavu-journal
+*.gardavu-wal
+*.gardavu-shm

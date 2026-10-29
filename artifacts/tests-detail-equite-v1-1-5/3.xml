@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.556" timestamp="2026-10-29T10:26:22.623432+01:00" hostname="WorkShip"><testcase classname="tests.test_equity_detail" name="test_detail_requires_one_selection_with_explicit_feedback[aucun]" time="0.549" /></testsuite></testsuites>

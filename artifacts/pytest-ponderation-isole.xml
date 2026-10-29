@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="10" time="2.190" timestamp="2026-10-29T09:04:35.042172+01:00" hostname="WorkShip"><testcase classname="tests.test_weights" name="test_multiple_weight_is_used_by_solver[2-expected0]" time="0.012" /><testcase classname="tests.test_weights" name="test_multiple_weight_is_used_by_solver[3-expected1]" time="0.006" /><testcase classname="tests.test_weights" name="test_weight_targets_remain_proportional_by_month_category_and_holiday" time="0.000" /><testcase classname="tests.test_weights" name="test_weight_never_creates_duplicate_doctor_or_relaxes_spacing" time="0.005" /><testcase classname="tests.test_weights" name="test_weight_button_persists_and_updates_targets_without_changing_saved_roster" time="0.462" /><testcase classname="tests.test_weights" name="test_weight_dialog_rejects_nonpositive_or_nonfinite_value[0]" time="0.313" /><testcase classname="tests.test_weights" name="test_weight_dialog_rejects_nonpositive_or_nonfinite_value[-2]" time="0.046"><failure message="_tkinter.TclError: Can't find a usable tk.tcl in the following directories: &#10;    C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tcl8.6/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/library&#10;&#10;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl: couldn't read file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/scale.tcl&quot;: no such file or directory&#10;couldn't read file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/scale.tcl&quot;: no such file or directory&#10;    while executing&#10;&quot;source -encoding utf-8 [file join $::ttk::library scale.tcl]&quot;&#10;    (file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl&quot; line 118)&#10;    invoked from within&#10;&quot;source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl&quot;&#10;    (&quot;uplevel&quot; body line 1)&#10;    invoked from within&#10;&quot;uplevel \#0 [list source -encoding utf-8 $::ttk::library/ttk.tcl]&quot;&#10;    (file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl&quot; line 702)&#10;    invoked from within&#10;&quot;source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl&quot;&#10;    (&quot;uplevel&quot; body line 1)&#10;    invoked from within&#10;&quot;uplevel #0 [list source -encoding utf-8 $file]&quot;&#10;&#10;&#10;This probably means that tk wasn't installed properly.">tmp_path = WindowsPath('C:/Users/flori/Documents/GitHub/GARDAVU/artifacts/pytest-ponderation-isole/test_weight_dialog_rejects_non1')
+rules = Rules(templates=[Template(id='soir', kind='SEMAINE', category='SEMAINE', start='19:00', end='24:00', required=1, effec...recent_months=12, weekday_threshold=None, max_seconds=8, seed=42, workers=1, date_exceptions={}, holiday_exceptions={})
+value = '-2'
+
+    @pytest.mark.parametrize('value', ['0', '-2', 'nan', 'inf'])
+    def test_weight_dialog_rejects_nonpositive_or_nonfinite_value(tmp_path, rules, value):
+&gt;       app = App()
+              ^^^^^
+
+tests\test_weights.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+gardavu\ui.py:281: in __init__
+    super().__init__()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;gardavu.ui.App object .&gt;, screenName = None, baseName = '__main__'
+className = 'Tk', useTk = True, sync = False, use = None
+
+    def __init__(self, screenName=None, baseName=None, className='Tk',
+                 useTk=True, sync=False, use=None):
+        """Return a new top level widget on screen SCREENNAME. A new Tcl interpreter will
+        be created. BASENAME will be used for the identification of the profile file (see
+        readprofile).
+        It is constructed from sys.argv[0] without extensions if None is given. CLASSNAME
+        is the name of the widget class."""
+        self.master = None
+        self.children = {}
+        self._tkloaded = False
+        # to avoid recursions in the getattr code in case of failure, we
+        # ensure that self.tk is always _something_.
+        self.tk = None
+        if baseName is None:
+            import os
+            baseName = os.path.basename(sys.argv[0])
+            baseName, ext = os.path.splitext(baseName)
+            if ext not in ('.py', '.pyc'):
+                baseName = baseName + ext
+        interactive = False
+&gt;       self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       _tkinter.TclError: Can't find a usable tk.tcl in the following directories: 
+E           C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tcl8.6/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/library
+E       
+E       C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl: couldn't read file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/scale.tcl": no such file or directory
+E       couldn't read file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/scale.tcl": no such file or directory
+E           while executing
+E       "source -encoding utf-8 [file join $::ttk::library scale.tcl]"
+E           (file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl" line 118)
+E           invoked from within
+E       "source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl"
+E           ("uplevel" body line 1)
+E           invoked from within
+E       "uplevel \#0 [list source -encoding utf-8 $::ttk::library/ttk.tcl]"
+E           (file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl" line 702)
+E           invoked from within
+E       "source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl"
+E           ("uplevel" body line 1)
+E           invoked from within
+E       "uplevel #0 [list source -encoding utf-8 $file]"
+E       
+E       
+E       This probably means that tk wasn't installed properly.
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py:2346: TclError</failure></testcase><testcase classname="tests.test_weights" name="test_weight_dialog_rejects_nonpositive_or_nonfinite_value[nan]" time="0.338" /><testcase classname="tests.test_weights" name="test_weight_dialog_rejects_nonpositive_or_nonfinite_value[inf]" time="0.062"><failure message="_tkinter.TclError: Can't find a usable tk.tcl in the following directories: &#10;    C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tcl8.6/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/library&#10;&#10;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl: couldn't read file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/entry.tcl&quot;: no such file or directory&#10;couldn't read file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/entry.tcl&quot;: no such file or directory&#10;    while executing&#10;&quot;source -encoding utf-8 [file join $::ttk::library entry.tcl]&quot;&#10;    (file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl&quot; line 122)&#10;    invoked from within&#10;&quot;source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl&quot;&#10;    (&quot;uplevel&quot; body line 1)&#10;    invoked from within&#10;&quot;uplevel \#0 [list source -encoding utf-8 $::ttk::library/ttk.tcl]&quot;&#10;    (file &quot;C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl&quot; line 702)&#10;    invoked from within&#10;&quot;source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl&quot;&#10;    (&quot;uplevel&quot; body line 1)&#10;    invoked from within&#10;&quot;uplevel #0 [list source -encoding utf-8 $file]&quot;&#10;&#10;&#10;This probably means that tk wasn't installed properly.">tmp_path = WindowsPath('C:/Users/flori/Documents/GitHub/GARDAVU/artifacts/pytest-ponderation-isole/test_weight_dialog_rejects_non3')
+rules = Rules(templates=[Template(id='soir', kind='SEMAINE', category='SEMAINE', start='19:00', end='24:00', required=1, effec...recent_months=12, weekday_threshold=None, max_seconds=8, seed=42, workers=1, date_exceptions={}, holiday_exceptions={})
+value = 'inf'
+
+    @pytest.mark.parametrize('value', ['0', '-2', 'nan', 'inf'])
+    def test_weight_dialog_rejects_nonpositive_or_nonfinite_value(tmp_path, rules, value):
+&gt;       app = App()
+              ^^^^^
+
+tests\test_weights.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+gardavu\ui.py:281: in __init__
+    super().__init__()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;gardavu.ui.App object .&gt;, screenName = None, baseName = '__main__'
+className = 'Tk', useTk = True, sync = False, use = None
+
+    def __init__(self, screenName=None, baseName=None, className='Tk',
+                 useTk=True, sync=False, use=None):
+        """Return a new top level widget on screen SCREENNAME. A new Tcl interpreter will
+        be created. BASENAME will be used for the identification of the profile file (see
+        readprofile).
+        It is constructed from sys.argv[0] without extensions if None is given. CLASSNAME
+        is the name of the widget class."""
+        self.master = None
+        self.children = {}
+        self._tkloaded = False
+        # to avoid recursions in the getattr code in case of failure, we
+        # ensure that self.tk is always _something_.
+        self.tk = None
+        if baseName is None:
+            import os
+            baseName = os.path.basename(sys.argv[0])
+            baseName, ext = os.path.splitext(baseName)
+            if ext not in ('.py', '.pyc'):
+                baseName = baseName + ext
+        interactive = False
+&gt;       self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       _tkinter.TclError: Can't find a usable tk.tcl in the following directories: 
+E           C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tcl8.6/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/lib/tk8.6 C:/Users/flori/AppData/Local/Programs/Python/library
+E       
+E       C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl: couldn't read file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/entry.tcl": no such file or directory
+E       couldn't read file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/entry.tcl": no such file or directory
+E           while executing
+E       "source -encoding utf-8 [file join $::ttk::library entry.tcl]"
+E           (file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl" line 122)
+E           invoked from within
+E       "source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/ttk/ttk.tcl"
+E           ("uplevel" body line 1)
+E           invoked from within
+E       "uplevel \#0 [list source -encoding utf-8 $::ttk::library/ttk.tcl]"
+E           (file "C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl" line 702)
+E           invoked from within
+E       "source -encoding utf-8 C:/Users/flori/AppData/Local/Programs/Python/Python312/tcl/tk8.6/tk.tcl"
+E           ("uplevel" body line 1)
+E           invoked from within
+E       "uplevel #0 [list source -encoding utf-8 $file]"
+E       
+E       
+E       This probably means that tk wasn't installed properly.
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py:2346: TclError</failure></testcase><testcase classname="tests.test_weights" name="test_equity_export_contains_the_weight_used_by_validated_plan" time="0.123" /></testsuite></testsuites>

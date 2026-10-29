@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.055" timestamp="2026-10-29T09:44:59.214185+01:00" hostname="WorkShip"><testcase classname="tests.test_ui" name="test_template_pointer_actions_select_the_clicked_row" time="0.437" /></testsuite></testsuites>

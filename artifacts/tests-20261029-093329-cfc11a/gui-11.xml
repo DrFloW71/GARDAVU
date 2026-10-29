@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.753" timestamp="2026-10-29T09:34:11.909264+01:00" hostname="WorkShip"><testcase classname="tests.test_weights" name="test_multiple_weight_is_used_by_solver[2-expected0]" time="0.015" /></testsuite></testsuites>

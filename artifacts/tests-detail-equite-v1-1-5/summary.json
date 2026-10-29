@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "tests": 5,
+  "results": [
+    {
+      "node": "tests/test_equity_detail.py::test_button_opens_selected_doctor_details_with_validated_values[light]",
+      "exit_code": 0
+    },
+    {
+      "node": "tests/test_equity_detail.py::test_button_opens_selected_doctor_details_with_validated_values[dark]",
+      "exit_code": 0
+    },
+    {
+      "node": "tests/test_equity_detail.py::test_detail_requires_one_selection_with_explicit_feedback[aucun]",
+      "exit_code": 0
+    },
+    {
+      "node": "tests/test_equity_detail.py::test_detail_requires_one_selection_with_explicit_feedback[plusieurs]",
+      "exit_code": 0
+    },
+    {
+      "node": "tests/test_equity_detail.py::test_detail_is_visible_in_a_dialog_at_small_window_size",
+      "exit_code": 0
+    }
+  ]
+}

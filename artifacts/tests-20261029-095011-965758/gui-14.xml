@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.990" timestamp="2026-10-29T09:51:02.668518+01:00" hostname="WorkShip"><testcase classname="tests.test_weights" name="test_weight_never_creates_duplicate_doctor_or_relaxes_spacing" time="0.009" /></testsuite></testsuites>
